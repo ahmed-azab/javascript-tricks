@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BookList App</title>
+</head>
+<body>
+    
+    <div class="container mt-4">
+         <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-success"></i>
+            My<span class="text-success">Book</span>List</h1>
+            <form action="">
+            <div class="form-group">
+                <label>Title</label>
+                <input id="title" class="form-control" placeholder="title">
+            </div>
+            <div class="form-group">
+                <label>Auther</label>
+                <input id="auther" class="form-control" placeholder="auther">
+            </div>
+            <div class="form-group">
+                <label>ISBN</label>
+                <input id="isbn" class="form-control" placeholder="isbn">
+            </div>
+            <br>
+            </form>
+            <input onclick="myFunction()" type="submit" value="Add Book" class="form-control btn btn-success btn-block">
+       
+        
+            <table class="table table-hover mt-5">
+                <thead>
+                  <tr  class="table-success">
+                    <th scope="col">Title</th>
+                    <th scope="col">Auther</th>
+                    <th scope="col">Isbn</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="interRow">
+                
+                </tbody>
+              </table>
+
+
+    </div>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
